@@ -16,6 +16,7 @@ export default {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.LoaderOptionsPlugin({
             options: {
+                context: __dirname,
                 postcss: [
                     cssnext({
                         browsers: ['last 2 versions', 'IE > 10'],
